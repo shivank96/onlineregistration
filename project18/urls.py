@@ -20,5 +20,5 @@ from app18 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.Index,name="main")
+    path('',views.Index,name="main"),
 ]
