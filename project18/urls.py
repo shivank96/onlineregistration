@@ -20,27 +20,4 @@ from app18 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('',views.ShowIndex.as_view(),name="main"),
-
-    path('main/',TemplateView.as_view(template_name="index.html"),name="main"),
-
-    path('add_new/',views.Add_employee.as_view(),name="add_new"),
-
-    path('view_employees/',views.EmployeeInfo.as_view(),name="view_employees"),
-
-    path('update_emp<int:pk>/',views.Update_info.as_view(),name="update_emp"),
-
-    path('full_details<int:pk>/',views.ShowFullDetails.as_view(),name="full_details"),
-
-    path('delete_emp<int:pk>/',views.DeleteEmployee.as_view(),name="delete_emp"),
-
-    path('show/',views.show_login,name="show"),
-
-    path('check/',views.Check_credentials,name="Check_Credentials"),
-
-    path('viewall/',views.Viewall.as_view(),name="view")
-
-
-
-
 ]
